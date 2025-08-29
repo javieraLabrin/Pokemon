@@ -6,7 +6,7 @@ Este proyecto es una Pokédex interactiva desarrollada con React y la api https:
 
 ## Landing Page
 
-Al ingresar, se muestra una pantalla de bienvenida animada con el logo de Pokémon, una pokebola saltando y siluetas de Pokémon moviéndose aleatoriamente. El botón "START" aparece con animación de máquina de escribir. Al hacer clic, se navega a la galería principal.
+Al ingresar, se muestra una pantalla de bienvenida animada con el logo de Pokémon siguiendo huellas de pokemones, una pokebola saltando y siluetas de Pokémon moviéndose aleatoriamente. El botón "START" aparece con animación de máquina de escribir. Al hacer clic, se navega a la galería principal.
 
 <img width="1338" height="618" alt="loading-pokemon" src="https://github.com/user-attachments/assets/7c5758e9-520a-4f10-bbf8-e17e58b2ae0f" />
 
