@@ -1,0 +1,125 @@
+.pokemon-card {
+  background: #cc0000;
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  font-family: "Andalé Mono", "Courier New", monospace;
+  position: relative;
+  margin: 20px auto;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 12px 0 12px;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.red {
+  background: #3b4cca;
+}
+.dot.yellow {
+  background: #ffbd2e;
+}
+.dot.green {
+  background: #27c93fe3;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #fffde7;
+  margin-top: -15px;
+  transition: color 0.2s;
+}
+.favorite-btn.favorited {
+  color: #ffd600;
+}
+.favorite-btn:hover {
+  color: #ffd600;
+}
+
+.card-main {
+  padding: 0 16px 16px 16px;
+}
+
+.pokemon-image-screen {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+}
+
+.pokemon-image-box {
+  background: #111;
+  border-radius: 10px 10px 0 0;
+  padding: 16px 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-image {
+  width: 90px;
+  height: 90px;
+  image-rendering: pixelated;
+}
+
+.pokemon-name {
+  color: #ffd600;
+  font-size: 1.2rem;
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: inherit;
+}
+
+.pokemon-info-box {
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 12px 10px 10px 10px;
+  margin-top: 0;
+  color: #222;
+  font-size: 1rem;
+  text-align: left;
+  font-family: inherit;
+  height: 90px;
+}
+
+.pokemon-info-box p {
+  margin: 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
