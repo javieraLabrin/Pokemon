@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Pokédex React - Proyecto Visual
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una Pokédex interactiva desarrollada con React y la api https://pokeapi.co/, que permite explorar, buscar y marcar como favoritos a los Pokémon. El diseño está inspirado en la estética clásica de Pokémon, con animaciones y una experiencia visual atractiva. 
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Landing Page
 
-### `npm start`
+Al ingresar, se muestra una pantalla de bienvenida animada con el logo de Pokémon, una pokebola saltando y siluetas de Pokémon moviéndose aleatoriamente. El botón "START" aparece con animación de máquina de escribir. Al hacer clic, se navega a la galería principal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="1338" height="618" alt="loading-pokemon" src="https://github.com/user-attachments/assets/7c5758e9-520a-4f10-bbf8-e17e58b2ae0f" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Galería de Pokémon (PokeGrid)
 
-### `npm run build`
+La galería muestra una cuadrícula de tarjetas de Pokémon, cada una con su sprite, nombre, número y una breve descripción.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Se puede buscar por nombre en tiempo real.
+- Es posible marcar Pokémon como favoritos (estrella).
+- Hay paginación para navegar entre cientos de Pokémon.
+- El botón "Favorites" filtra solo los favoritos.
+- El diseño es responsivo y colorido, con detalles visuales inspirados en la Pokédex.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="1273" height="620" alt="pokemon-grid" src="https://github.com/user-attachments/assets/7153526b-095b-4455-89dd-0bd53845e415" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Pokédex Detallada
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Al hacer clic en cualquier Pokémon, se abre una página de detalle tipo Pokédex:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Muestra la imagen, nombre, número, género, tipos, altura, peso y una descripción/flavor text.
+- El diseño simula una Pokédex física, con colores y tipografías temáticas.
+- Incluye botón para volver a la galería.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="645" height="458" alt="pokedex-pokemon" src="https://github.com/user-attachments/assets/518688ad-9358-4fd8-b4cd-d3288183201b" />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Estructura del Código
 
-### Code Splitting
+- **React + React Router:** Navegación entre páginas (`LandingPage`, `PokemonGrid`, `Pokedex`).
+- **Axios:** Para consumir la API de [PokeAPI](https://pokeapi.co/).
+- **CSS personalizado:** Cada página tiene su propio archivo de estilos para lograr la estética Pokémon.
+- **Favoritos:** Se guardan en `localStorage` para persistencia.
+- **Componentes reutilizables:** Tarjetas de Pokémon, buscador, paginación, etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Archivos principales:
 
-### Analyzing the Bundle Size
+- `src/js/LandingPage.js` — Página de inicio animada.
+- `src/js/PokemonGrid.js` — Galería con búsqueda, favoritos y paginación.
+- `src/js/Pokedex.js` — Vista detallada de cada Pokémon.
+- `src/css/` — Estilos personalizados para cada componente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ¿Cómo probar?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Clona el repositorio y ejecuta `npm install`.
+2. Inicia el proyecto con `npm start`.
+3. Navega entre las páginas y explora la Pokédex.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Disfruta explorando el mundo Pokémon!
